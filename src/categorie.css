@@ -1,0 +1,126 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.quiz-container::before {
+    content: "";
+    background-color: rgba(255, 165, 0, 0.5);;
+    width: 10vw; 
+    height: 10vw; 
+    border-radius: 50%;
+    position: absolute;
+    top: 5vw; 
+    left: 1vw; 
+    transform: translateX(-50%);
+  }
+  
+  .circle-1::before {
+    content: "";
+    background-color: rgba(255, 165, 0, 0.5);
+    width: 18vw;
+    height: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -5vw;
+    left: 36vw;
+    transform: translateX(-50%);
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .quiz-container::before {
+      width: 15vw; 
+      height: 15vw;
+      top: 10vw; 
+      left: 1vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .quiz-container::before {
+      width: 20vw; 
+      height: 15vw;
+      top: 15vw; 
+      left: 1vw;
+    }
+  }
+  
+  .circle-3::before {
+    content: "";
+    background-color: rgba(255, 165, 0, 0.5);
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 6vw;
+    right: 27vw;
+    transform: translateX(50%);
+  }
+  
+  
+  .circle-2::before {
+    content: "";
+    background-color: rgba(255, 165, 0, 0.5);
+    width: 9vw;
+    height: 8vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 17vw;
+    right: 1vw;
+    transform: translateX(50%);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .circle-2::before{
+      width: 15vw; 
+      height: 15vw;
+      top: 19vw; 
+      left: 73vw;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .circle-3::before{
+      width: 20vw; 
+      height: 15vw;
+      top: 43vw; 
+      left: 80vw;
+    }
+  }
+
+  
+  
+  
+  .quiz-container {
+    
+    border-radius: 20px;
+    background: linear-gradient(180deg, yellow 50%, white 50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+
+ 
+  .card {
+    text-decoration: none !important;
+    border: solid;
+    border-style: ridge;
+  }
+
+
+
+.custom-link-class {
+    text-decoration: none !important;
+  }
+  
+
+  .category-link a:visited {
+    color: #000; 
+  }
+  
