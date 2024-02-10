@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import {  useParams } from 'react-router-dom'; // useParams for passing
+import {  useParams } from 'react-router-dom'; 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { Modal, Button } from 'react-bootstrap'; // Import Modal and Button components
+import { Modal, Button } from 'react-bootstrap'; 
 
 
 
 import './quiz.css';
 
 const QuizApp = () => {
-  const { categoryId } = useParams(); // category ID from the URL parameters getting
+  const { categoryId } = useParams(); 
 
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -92,8 +92,7 @@ const QuizApp = () => {
   
 
     if (quizEnded === true) {
-      // End of the quiz
-      // Show the modal when the last question is answered
+     
       setShowModal(true);
     }
   }, [quizEnded]);
@@ -102,15 +101,7 @@ const QuizApp = () => {
     setShowModal(false);
     window.location = '/'; 
   };
-  // useEffect(() => {
-  //   // Display alert when the quiz has ended and correct answers count has changed
-  //   if (quizEnded) {
-  //     window.setTimeout(() => {
-  //       window.alert('Correct answers = ' + correctAnswersCount);
-  //       window.location = '/';
-  //     }, 5000);
-  //   }
-  // }, [quizEnded, correctAnswersCount]);
+ 
 
   if (questions.length === 0) {
     return <div id='load'>
@@ -202,7 +193,7 @@ const QuizApp = () => {
           <p>Total Questions : {questions.length}</p>
           <p>Correct Answers : {correctAnswersCount}</p>
           <p>Incorrect answers : {incorrectAnswersCount}</p>
-          {/* You can add more details or customize the content here */}
+
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" id='done' onClick={handleCloseModal}>

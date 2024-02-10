@@ -5,7 +5,7 @@ import './categorie.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const categoryIcons = {
-    9: 'fas fa-history', // Replace with the relevant icon class for each category
+    9: 'fas fa-history', 
     10: 'fas fa-book',
     11: 'fas fa-film',
     12: 'fa-solid fa-music',
